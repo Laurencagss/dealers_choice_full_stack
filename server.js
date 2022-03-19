@@ -10,6 +10,8 @@ app.get('/legs', (req, res)=> res.sendFile(path.join(__dirname, 'legs.html')));
 app.get('/head', (req, res)=> res.sendFile(path.join(__dirname, 'head.html')));
 app.get('/patch', (req, res)=> res.sendFile(path.join(__dirname, 'patch.html')));
 app.get('/mismatch', (req, res)=> res.sendFile(path.join(__dirname, 'mismatch.html')));
+app.get('/hairmakeup', (req, res)=> res.sendFile(path.join(__dirname, 'hairmakeup.html')));
+app.get('/hat', (req, res)=> res.sendFile(path.join(__dirname, 'hat.html')));
 
 app.post('/api/things', async(req, res, next)=>{
     try{

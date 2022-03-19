@@ -16,9 +16,12 @@ const syncAndSeed = async() => {
     await Things.create({ name: 'leg-hair' });
     await Things.create({ name: 'patches' });
     await Things.create({ name: 'mismatch' });
+    await Things.create({ name: 'hairmakeup' });
+    await Things.create({ name: 'hat' });
+
 
    return {
-        thing: ['pompadour', 'shaved-head', 'leg-hair', 'mismatch', 'patches']
+        thing: ['pompadour', 'shaved-head', 'leg-hair', 'mismatch', 'patches', 'hairmakeup', 'hat'],
    }
 }
 
@@ -26,6 +29,6 @@ module.exports = {
     syncAndSeed, 
     db,
     models: {
-       Thing
+       Things
     }
     }
